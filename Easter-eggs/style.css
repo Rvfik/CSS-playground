@@ -1,0 +1,139 @@
+body {
+    background-color: #BEEB9F;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: #D04A73;
+    text-shadow: 3px 0px 0px #F5ECDD;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.eggs {
+    margin: 1em auto;
+    text-align: center;
+}
+
+.egg {
+    width: 140px;
+    height: 200px;
+    margin: 1em auto;
+    background: #FBE9E7;
+    border-radius: 50%/60% 60% 40% 40%;
+
+    display: inline-block;
+    overflow: hidden;
+}
+
+.egg-right {
+    background-color: #D11965;
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/29/21/01/music-1781579_960_720.png");
+    transform: rotate(25deg);
+    animation: egg-right-animation 0.7s linear 0s infinite alternate;
+}
+
+.egg-left {
+    transform: rotate(-10deg);
+    animation: egg-left-animation 0.8s linear 0s infinite alternate;
+}
+.egg-3 {
+    background-color: #FFBCA3;
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/18/19/42/abstract-1751204_1280.png");
+    transform: rotate(-10deg);
+    animation: egg-3-animation 1s linear 0s infinite alternate;
+}
+
+.stripe {
+    height: 20%;
+}
+
+.stripe:not(:first-child) {
+    border-top: 2px solid #ffff;
+}
+
+.stripe:nth-child(1) {
+    background: #FFBDE8;
+}
+
+.stripe:nth-child(2) {
+    background: #BDE8FF;
+}
+
+.stripe:nth-child(3) {
+    background: #E8FFBD;
+}
+
+.stripe:nth-child(4) {
+    background: #FFE8BD;
+}
+
+.stripe:nth-child(5) {
+    background: #E8BDFF;
+}
+
+
+
+//KEYFRAMES
+
+@-webkit-keyframes egg-left-animation {
+    0% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes egg-left-animation {
+    0% {
+        transform: rotate(-15deg);
+    }
+    100% {
+          transform: rotate(-10deg);
+    }
+}
+
+@-webkit-keyframes egg-right-animation {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+@keyframes egg-right-animation {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+@-webkit-keyframes egg-3-animation {
+    0% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(12deg);
+    }
+}
+
+@keyframes egg-3-animation {
+    0% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(12deg);
+    }
+}
+
+
