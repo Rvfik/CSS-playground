@@ -1,0 +1,152 @@
+.heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 100px;
+    width: 100px;
+    transform: rotate(-45deg);
+    animation-iteration-count: infinite;
+    animation-name: beat;
+    animation-duration: 1s;
+}
+
+.heart:after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 50px;
+}
+
+.heart:before {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 0px;
+}
+
+/* .background-heart {
+    position: fixed;
+    padding: 0;
+    top: 250px;
+    right: 0;
+    left: 620px;
+    width: 300px;
+    height: 200px;
+    border-radius: 49%;
+    background: #D1ABA7;
+    animation-name: back-heart;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+} */
+
+.background {
+    position: fixed;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000000, #0A0B0F, #1F2430, #424C66, #5E6D91, #7F93C4);
+}
+
+.stars {
+    background: linear-gradient(#69531A, #997A26, #C9A032, #F2C13C);
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    animation-iteration-count: infinite;
+}
+
+.star-1 {
+    margin-top: 15px;
+    margin-left: 400px;
+    animation-name: twinkle-1;
+    animation-duration: 0.7s;
+}
+
+.star-2 {
+    margin-top: 45px;
+    margin-left: 1300px;
+    animation-name: twinkle-2;
+    animation-duration: 1.4s;
+}
+
+.star-3 {
+    margin-top: 25px;
+    margin-left: 900px;
+    animation-name: twinkle-3;
+    animation-duration: 1.3s;
+}
+
+.star-4 {
+    margin-top: 15px;
+    margin-left: 100px;
+    animation-name: twinkle-4;
+    animation-duration: 1.2s;
+}
+
+.star-5 {
+    margin-top: 0px;
+    margin-left: 600px;
+    animation-name: twinkle-5;
+    animation-duration: 1.1s;
+}
+
+@keyframes twinkle-1 {
+    50% {
+        transform: scale(0.5);
+    }
+}
+
+@keyframes twinkle-2 {
+    20% {
+        transform: scale(0.5);
+    }
+}
+
+@keyframes twinkle-3 {
+    30% {
+        transform: scale(0.4);
+    }
+}
+
+@keyframes twinkle-4 {
+    40% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes twinkle-5 {
+    60% {
+        transform: scale(0.7);
+    }
+}
+
+/*@keyframes back-heart {
+    50% {
+        background: pink;
+        opacity: 0.1;
+    }
+}*/
+
+@keyframes beat {
+    0% {
+        transform: scale(1) rotate(-45deg);
+    }
+    50% {
+        transform: scale(0.6) rotate(-45deg);
+    }
+}
